@@ -51,6 +51,10 @@
 #define WIIERO_VERSION "wiiero v1.3"
 #endif
 
+#ifdef SWITCH
+#define WIIERO_VERSION "wiiero v1.3    [switch edition]"
+#endif
+
 
 #define WIIERO_STD_LIFES              10
 #define WIIERO_STD_FLAGS               5
@@ -65,7 +69,7 @@
 #define WIIERO_STD_NB_ROCKS           50
 #define WIIERO_NAME_LEN               10
 #define WIIERO_STD_SCREEN_RESOLUTION  SCREEN_RES
-#define WIIERO_STD_OPT_FILE           "config.wro"
+#define WIIERO_STD_OPT_FILE           "/switch/wiiero/config.wro"
 #define WIIERO_STD_MUB                 0
 #define WIIERO_STD_LANG                0
 

@@ -122,19 +122,19 @@ enum{/* - -- --- WIIERO EVENTS ---- --- -- - */
     P1_ACTION_KEY_DOWN   = SDLK_DOWN,
     P1_ACTION_KEY_LEFT   = SDLK_LEFT,
     P1_ACTION_KEY_RIGTH  = SDLK_RIGHT,
-    P1_ACTION_KEY_JUMP   = SDLK_a,
-    P1_ACTION_KEY_CHANGE = SDLK_b,
-    P1_ACTION_KEY_FIRE   = SDLK_x,
-    P2_ACTION_KEY_UP     = SDLK_KP8,
-    P2_ACTION_KEY_DOWN   = SDLK_KP5,
-    P2_ACTION_KEY_LEFT   = SDLK_KP4,
-    P2_ACTION_KEY_RIGTH  = SDLK_KP6,
-    P2_ACTION_KEY_JUMP   = SDLK_INSERT,
-    P2_ACTION_KEY_CHANGE = SDLK_HOME,
-    P2_ACTION_KEY_FIRE   = SDLK_PAGEUP,
-    GAME_ACTION_KEY_EXIT = SDLK_ESCAPE,
+    P1_ACTION_KEY_JUMP   = SDLK_j, // zl
+    P1_ACTION_KEY_CHANGE = SDLK_PLUS,
+    P1_ACTION_KEY_FIRE   = SDLK_l,
+    P2_ACTION_KEY_UP     = SDLK_x,
+    P2_ACTION_KEY_DOWN   = SDLK_b,
+    P2_ACTION_KEY_LEFT   = SDLK_y,
+    P2_ACTION_KEY_RIGHT  = SDLK_a,
+    P2_ACTION_KEY_JUMP   = SDLK_k, // zr
+    P2_ACTION_KEY_CHANGE = SDLK_MINUS,
+    P2_ACTION_KEY_FIRE   = SDLK_r,
+    GAME_ACTION_KEY_EXIT = SDLK_RSHIFT,
     GAME_ACTION_KEY_FLIP = SDLK_TAB,
-    GAME_ACTION_KEY_PAUSE= SDLK_SPACE,
+    GAME_ACTION_KEY_PAUSE= SDLK_LSHIFT,
 };/* - -- --- WIIERO EVENTS ---- --- -- */
 
 
@@ -185,7 +185,7 @@ static __inline__ void game_check_event(game_t* g){
     g->worms[PLAYER_2]->worms_action |= ACTION_DOWN; 
   if ( keystate[P2_ACTION_KEY_LEFT] )
     g->worms[PLAYER_2]->worms_action |= ACTION_LEFT;
-   if ( keystate[P2_ACTION_KEY_RIGTH] )
+   if ( keystate[P2_ACTION_KEY_RIGHT] )
     g->worms[PLAYER_2]->worms_action |= ACTION_RIGHT; 
    if ( keystate[P2_ACTION_KEY_JUMP] )
     g->worms[PLAYER_2]->worms_action |= (ACTION_JUMP | ACTION_CANCEL); 

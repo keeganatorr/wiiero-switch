@@ -65,13 +65,14 @@ map_t* map_init(ressources_t* loaded_res, int nb_rocks,screen_res_t res){
                            , MAP_HEIGHT
                            , screen_get_bpp(res)
                            ,0,0,0,0);
-
-  font_console_print_debug("  background layer optim...\n",FONT_SMALL);
+  // Causes pink background
+  /*font_console_print_debug("  background layer optim...\n",FONT_SMALL);
   m->layers[BACKGROUND_LAYER] = surface_try_to_optimize(m->layers[BACKGROUND_LAYER],"background layer");
   font_console_print_debug("  ground layer optim...\n",FONT_SMALL);
   m->layers[GROUND_MAP_LAYER] = surface_try_to_optimize(m->layers[GROUND_MAP_LAYER],"ground layer");
   font_console_print_debug("  static layer optim...\n",FONT_SMALL);
   m->layers[STATICS_MAP_LAYER] = surface_try_to_optimize(m->layers[STATICS_MAP_LAYER],"static layer");
+  */
   map_reset(m,loaded_res,nb_rocks);
   return m;
 }/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -153,7 +154,7 @@ void fill_background(map_t* m,ressources_t* r){
       int color = rand() % CPALETT;
       Uint8 r,g,b;
       get_grounds_colors(selected_amb,BACK_GR,color,&r,&g,&b);
-      put_pix_color( m->layers[BACKGROUND_LAYER],x,y,r,g,b);
+      put_pix_color( m->layers[BACKGROUND_LAYER],x,y,r,g,b); // not this
     }
   }
   

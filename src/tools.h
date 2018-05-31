@@ -36,6 +36,9 @@
 #ifdef WII_MODE
 #include <fat.h>
 #endif
+#ifdef SWITCH
+#include <switch.h>
+#endif
 
 #ifdef DEBUG_ON
 #define SHOW_FPS
@@ -49,15 +52,27 @@
         
 #ifdef DEBUG_ON
 #  define ASSERT(expression) { if(!(expression)) ERROR("Assert failure!\n"); };
-#  define DBG(...) printf(__VA_ARGS__);
+#  define DBG(...) { char buffer[500]; sprintf(buffer,__VA_ARGS__); svcOutputDebugString(buffer,strlen(buffer)); printf(__VA_ARGS__); }
 #  define HARD_DBG_CLEAR() { FILE * fp=fopen("dbg.txt","w"); fclose(fp);}
-#  define HARD_DBG(...) { FILE * fp=fopen("dbg.txt","a"); fprintf(fp,__VA_ARGS__); fclose(fp);}
+#  define HARD_DBG(...) { char buffer[500]; sprintf(buffer,__VA_ARGS__); svcOutputDebugString(buffer,strlen(buffer)); FILE * fp=fopen("/switch/wiiero/dbg.txt","a"); fprintf(fp,__VA_ARGS__); fclose(fp);}
 #else
 #  define ASSERT(expression) ;
 #  define DBG(...) ;
 #  define HARD_DBG_CLEAR() ;
 #  define HARD_DBG(...) ;
+//#  define HARD_DBG(...) { char buffer[500]; sprintf(buffer,__VA_ARGS__); svcOutputDebugString(buffer,strlen(buffer)); FILE * fp=fopen("/switch/wiiero/dbg.txt","a"); fprintf(fp,__VA_ARGS__); fclose(fp);}
+//#  define HARD_DBG(...) ;
+//#  define HARD_DBG(...) { FILE * fp=fopen("dbg.txt","a"); fprintf(fp,__VA_ARGS__); fclose(fp);}
 #endif
+
+/*
+#ifdef DEBUG_ON
+#  define ASSERT(expression) { if(!(expression)) ERROR("Assert failure!\n"); };
+#  define DBG(...) printf(__VA_ARGS__);
+#  define HARD_DBG_CLEAR() { FILE * fp=fopen("dbg.txt","w"); fclose(fp);}
+#  define HARD_DBG(...) { FILE * fp=fopen("dbg.txt","a"); fprintf(fp,__VA_ARGS__); fclose(fp);}
+#else
+*/
 
 
 

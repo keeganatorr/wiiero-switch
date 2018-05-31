@@ -36,7 +36,7 @@
 #ifndef NO_SOUND
 static int sengine_initialized = 0;
 
-#define AUDIO_DIR "audio"
+#define AUDIO_DIR "/switch/wiiero/audio"
 //#define AUDIO_DIR "./audio"
 
 static sendine_sound_t sounds[WIIERO_MAX_SOUNDS] ={
@@ -74,7 +74,7 @@ static sendine_sound_t sounds[WIIERO_MAX_SOUNDS] ={
 /* -WIIERO_SOUND_BEE         */ {AUDIO_DIR"/bee.wav"  ,0l,SENGINE_TRACK_UNLOADED}
 };
 
-#define MUSIC_DIR "music"
+#define MUSIC_DIR "/switch/wiiero/music"
 
 static sendine_music_t playlist[] = {
    {MUSIC_DIR"/Sandjorda.mp3",0l}

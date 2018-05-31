@@ -46,6 +46,9 @@ static char str_errno[128];
 #ifdef WII_MODE
 #include "input_wii.h"
 #endif
+#ifdef SWITCH
+#include "input_switch.h"
+#endif
 
 #include "font.h"
 #include "cpu_player.h"
@@ -104,7 +107,8 @@ char game_nicknames[NB_PLAYERS][WIIERO_NAME_LEN]={
   {'P','2','\0','\0','\0','\0','\0','\0','\0','\0'}};
 
 
-void wiiero_init(game_t* g){
+void wiiero_init(game_t* g)
+{
   ASSERT(g);  
    if(SDL_Init(SDL_INIT_VIDEO |
 #ifndef NO_SOUND
@@ -162,11 +166,14 @@ void wiiero_load(game_t* g){
   ASSERT(g);  
   font_console_print_debug("Load config...\n",FONT_SMALL);
   if(!wiiero_load_config(g))
-    font_console_print("Load config skipped\n",FONT_SMALL);
+    font_console_print("Load config skipped\n",FONT_SMALL); // crashes here // try no sound;
 
+  font_console_print("Load audio\n",FONT_SMALL);
   font_console_print_debug("init audio mixer\n",FONT_SMALL);
   if(sengine_init() != 0)
     font_console_print("audio mixer init failed !!!\n",FONT_SMALL);
+
+  font_console_print("Audio Mixer Loaded!\n",FONT_SMALL);
 #ifdef WII_MODE
   init_wiimotes();
 #endif

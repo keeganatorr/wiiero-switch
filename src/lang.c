@@ -233,7 +233,7 @@ void apply_lang(const char* filename){
   int wiiero_label_id = WIIERO_LANG_GAME_LOAD;
   if (!filename)
    return;
-  snprintf(buff,511,"lang/%s.wtf",filename);
+  snprintf(buff,511,"/switch/wiiero/lang/%s.wtf",filename);
   conf_file = fopen(buff,"r");
   if(!conf_file)
     return;

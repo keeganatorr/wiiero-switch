@@ -47,6 +47,13 @@
 //#define SCREEN_RES   RES_640_420
 #endif
 
+#ifdef SWITCH
+//#define SCREEN_RES   RES_1280_720
+#define SCREEN_RES   RES_320_240
+//#define SCREEN_RES   RES_1280_720
+//#define SCREEN_RES   RES_640_420
+#endif
+
 
 
 #define WANTED_FPS 25

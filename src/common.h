@@ -38,6 +38,7 @@ typedef enum { RES_320_240
               ,RES_640_420
               ,RES_640_480
               ,RES_720_480
+              ,RES_1280_720
               ,MAX_RES
 } screen_res_t;
 
@@ -49,14 +50,14 @@ typedef enum { RES_320_240
 #define OLD_MODE
 
 /* InGame debug (LoadScreen) */
-//#define INGAME_DEBUG_ON
+#define INGAME_DEBUG_ON
 //#define DEBUG_ON
 
 
 /* Disable framerate */
-#define NO_FRAME_RATE
+//#define NO_FRAME_RATE
 
 /* Disable sound */
-//#define NO_SOUND
+#define NO_SOUND
 
 #endif

@@ -49,27 +49,27 @@ int main(int argc, char * argv[]) {
   srand(time(NULL));
 
 
-#ifdef PC_MODE
-  if(1){//set coredump
-    struct rlimit rlim;
-    rlim.rlim_cur = RLIM_INFINITY;
-    rlim.rlim_max = RLIM_INFINITY;
-    if( setrlimit(RLIMIT_CORE, &rlim) == 0 ) {
-      //fprintf(stdout, "Coredump available\n");
-    }else {
-      HARD_DBG("error setrlimit coredump\n");
-      exit(EXIT_FAILURE);
+  #ifdef PC_MODE
+    if(1){//set coredump
+      struct rlimit rlim;
+      rlim.rlim_cur = RLIM_INFINITY;
+      rlim.rlim_max = RLIM_INFINITY;
+      if( setrlimit(RLIMIT_CORE, &rlim) == 0 ) {
+        //fprintf(stdout, "Coredump available\n");
+      }else {
+        HARD_DBG("error setrlimit coredump\n");
+        exit(EXIT_FAILURE);
+      }
     }
-  }
-#endif
+  #endif
 
-#ifdef WII_MODE
-  /* Init wii sd fat layer */
-  if(!fatInitDefault()){
-    HARD_DBG("can't init SD card fat io interface... bye bye :-(");
-    exit(EXIT_FAILURE);
-  } 
-#endif
+  #ifdef WII_MODE
+    /* Init wii sd fat layer */
+    if(!fatInitDefault()){
+      HARD_DBG("can't init SD card fat io interface... bye bye :-(");
+      exit(EXIT_FAILURE);
+    } 
+  #endif
   HARD_DBG_CLEAR();
   check_lang_files();
   //apply_lang(wiiero_lang_files[1]);
