@@ -1,0 +1,181 @@
+#  __      _ .__  .__
+# /  \    / \(__) (__)  ____ ______  ____
+# \   \/\/  /|  | |  |_/ __ \\_  _ \/  _ \ 
+#  \       //   |/   |\  ___/ |  |\(  <_> )
+#   \__/\_/ \__ \\__ \ \___  >|__|  \____/ 
+#              \/   \/     \/ By BScrk
+# Wiiero language files format :
+#   The '#' character is used in order to comment the line.
+#   <whitespace> or <tab> characters are removed at the beginning of all the
+#   wiiero labels.
+#   Supported charset:  abcdefghijklmnopqrstuvwxyz.:+!0123456789[]
+#
+# To traduce Wiiero you have to replace english labels in the template file 
+# (Template.txt) by your translated labels and rename your new file <lang>.wtf
+# "wtf" stands for "Wiiero Translation File" and not for "What The Fuck" ;-)
+# Nota Bene : The wiiero lang manager isn't very evolved, so don't change
+# labels order, thanks.
+# 
+# Feel free to send me (wiiero@free.fr) your translated file and i'll intergate
+# it in the next wiiero release !
+# Good translation, and thank's !
+#
+# Translation author: Tusk
+#
+### Game labels ###
+  Toltes...
+  Kerlek eloszor csatlakoztass 2 kontrollert...
+  A haboru mar elkezdodott, nyomj (Vissza...)-t
+  Nincs a harctéren senki.Kezdéshez [Wiiero Inditasa]
+  Inditsd ujra a jatekot a felbontas váltáshoz
+  Nyomj meg egy gombot...
+  Pillanatmegallitas
+  Ongyilkossag...
+  Megoltek teged !
+### Main Menu ###
+  Wiiero Inditasa
+  Beallitasok
+  Jatek ujrainditasa
+  Beall. betoltese
+  Beall. mentese
+  Hogyan Jatszak
+  Wiiero-rol
+  Vissza ...
+  Kilepes
+### Options ###
+  Deathmatch
+  Game of tag
+  CTF
+  Be
+  Ki
+  Talaj
+  Homok
+  Ejfel
+### Option Menu Labels ###
+  mod:
+  eletek:
+  zaszlok:
+  visszaszamlalas:
+  ujratoltesi ido:
+  max bonusz:
+  bonusz nevek:
+  felbontas:
+  regeneracios szint:
+  kovek szama:
+  hatasok:
+  arnyek:
+  1.jatekos neve:
+  2.jatekos neve:
+  xtra fegyverek:
+  vissza ...
+### Weapon selection part ###
+  Fegyver Valasztas:
+  [Megse]   : osszekever
+  [oke]     : elfogad
+### Players name menu ###
+  Jatekos Neve:
+### Round score ###
+  Pontok
+  Gyilkolt
+  Meghalt
+  Ongyilkossag
+  Esely
+  Elet
+  Ido
+  Zaszlo
+  Megnyerted a fordulot
+  Fordulo dontetlen
+### Config Info ###
+  Betoltes Sikeresâ€¦
+  Sikertelen Betoltes !
+  Mentes Sikeres
+  Sikertelen Mentes !
+### Exit labels ###
+  Koszonom, hogy kiprobaltatok a Wiiero-t
+  Viszlat!
+### Weapon Names ###
+# Warning, use only 17 characters max
+# for the weapon selection rendering (in 320x240 mode)
+  Pisztoly
+  Uzi
+  Gyorstuzelo
+  Puska
+  Szuper Puska
+  Minigun
+  Agyu
+  Panceltoro
+  Vegitelet
+  Winchester
+  Larpa
+  Ugralo larpa
+  Zimm
+  .50 Puska
+  Lezeragyu
+  Gauss Pisztoly
+  Langszoro
+  Mini raketa
+  Raketa
+  RB Pusztito
+  Pokoli Utazas
+  Lazer
+  Grasshopper
+  Testcsapda
+  Akna
+  Ugralo Akna
+  Lebego Akna
+  TuskÃ©s Golyok
+  Hasito
+  Granat
+  Bombakoteg
+  Mini Nuk. Bomba
+  Nagy Nuk. Bomba
+  Chiquita Bomba
+  Robbanoszerek
+  Napalm
+  Sargolyo
+  Szent Granat
+  Szuper Agyu
+  Mennyezeti Akna
+  Grasshapper Granat
+  Kek Langszoro
+  M14-es Granat
+  Fustgranat
+  Plazmaagyu
+  Nuklearis Larpa
+  Irany. nuk. Larpa
+  Chiquita Pisztoly
+  Fereghajto
+  Ugro Akna
+  Csapda
+  Kamikaze
+  Tuskes ido Bomba
+  Rovartaska
+  Nuklearis Fereg
+  Gyogyszer
+  Vaskukac
+  Flipper
+### How To Play ###
+  Iranyitas
+  Tuzeles
+  Ugras
+  Kaparas
+  Fegyverlista
+  Elozo Fegyver
+  Kov. Fegyver
+  Nindzsa Kotel
+  Fel
+  Le
+  Balra
+  Jobbra
+  Megallitas
+  Menu
+  Oke
+  Megse
+### Wiiero v1.2 new labels ###
+  Mud particles:#  TODO
+  Language:#       TODO
+  Next menu page#  TODO
+  Prev menu page#  TODO
+##############################
+## Wiiero lang file end ;-) ##
+##############################

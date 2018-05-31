@@ -1,0 +1,181 @@
+#  __      _ .__  .__
+# /  \    / \(__) (__)  ____ ______  ____
+# \   \/\/  /|  | |  |_/ __ \\_  _ \/  _ \ 
+#  \       //   |/   |\  ___/ |  |\(  <_> )
+#   \__/\_/ \__ \\__ \ \___  >|__|  \____/ 
+#              \/   \/     \/ By BScrk
+# Wiiero language files format :
+#   The '#' character is used in order to comment the line.
+#   <whitespace> or <tab> characters are removed at the beginning of all the
+#   wiiero labels.
+#   Supported charset:  abcdefghijklmnopqrstuvwxyz.:+!0123456789[]
+#
+# To traduce Wiiero you have to replace english labels in the template file 
+# (Template.txt) by your translated labels and rename your new file <lang>.wtf
+# "wtf" stands for "Wiiero Translation File" and not for "What The Fuck" ;-)
+# Nota Bene : The wiiero lang manager isn't very evolved, so don't change
+# labels order, thanks.
+# 
+# Feel free to send me (wiiero@free.fr) your translated file and i'll intergate
+# it in the next wiiero release !
+# Good translation, and thank's !
+#
+# Translation author: <Your name>
+#
+### Game labels ###
+  Loading
+  Please connect 2 controlers first...
+  Match already started. use [return ...]
+  No match started. use [play wiiero]
+  Restart the game for apply the new resolution.
+  press any key...
+  Pause
+  Suicide...
+  You have been killed !
+### Main Menu ###
+  play wiiero
+  option menu
+  restart game
+  reload conf
+  save config
+  how to play
+  about wiiero
+  return ... 
+  exit wiiero
+### Options ###
+  Deathmatch
+  Game of tag
+  CTF
+  On
+  Off
+  Dirt
+  Sand
+  Night
+### Option Menu Labels ###
+  mode:
+  lives:
+  flags:
+  countdown:
+  reloadtime:
+  max bonus:
+  bonus names:
+  resolution:
+  regen level:
+  nb rocks:
+  ambience:
+  shadow fx:
+  player1 name:
+  player2 name:
+  xtra weapons:
+  return ... 
+### Weapon selection part ###
+  weapons selection:
+  [cancel] : randomize
+  [ok]     : validate
+### Players name menu ###
+  Player name: 
+### Round score ###
+  Score
+  Frags
+  Deaths
+  Suicides
+  Ratio
+  lifes
+  time
+  flags
+  win the round
+  round draw
+### Config Info ###
+  config reloaded...
+  config reload failed !
+  save completed...
+  save failed !
+### Exit labels ###
+  Thanks for playing Wiiero !
+  good bye...
+### Weapon Names ###
+# Warning, use only 17 characters max 
+# for the weapon selection rendering (in 320x240 mode)
+  handgun
+  uzi
+  chaingun
+  shotgun
+  super shotgun
+  minigun
+  cannon
+  bazooka
+  doomsday
+  winchester
+  larpa
+  bouncy larpa
+  zimm
+  .50 rifle
+  blaster
+  gauss gun
+  flamer
+  mini rocket
+  missile
+  rb rampage
+  hellraider
+  laser
+  grasshopper
+  booby trap
+  mine
+  bouncy mine
+  float mine
+  spikeballs
+  crackler
+  grenade
+  cluster bomb
+  mini nuke
+  big nuke
+  chiquita bomb
+  explosives
+  napalm
+  dirtball
+  holy grenade
+  super cannon
+  ceiling mine
+  ghopper grenade
+  blue flammer
+  an-m14 grenade
+  gas grenade
+  plasma cannon
+  nuke larpa
+  ctrl nuke larpa
+  chiquita gun
+  vermifuge
+  jumping mine
+  trap
+  kamikaze
+  spike time bomb
+  bug case
+  vermi nuke
+  medikit
+  iron worm
+  pinball
+### How To Play ###
+  Controls
+  Fire
+  Jump
+  Dig
+  Show weapon
+  Prev weapon
+  Next weapon
+  Ninja hook
+  Up
+  Down
+  Left
+  Right
+  Pause
+  Menu
+  Ok
+  Cancel
+### Wiiero v1.2 new labels ###
+  Mud particles:
+  Language:
+  Next menu page
+  Prev menu page
+##############################
+## Wiiero lang file end ;-) ##
+##############################

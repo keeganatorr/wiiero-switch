@@ -1,0 +1,123 @@
+MODULE 	= $(shell basename `pwd`)
+TARGET?=$(shell uname -s)
+
+ifeq ($(OS),FreeBSD)
+DATE	= gdate
+else
+DATE	= date
+endif
+
+ARCHIVE = backup/$(MODULE)-$(shell $(DATE) '+%Y-%m-%d-%Hh%M').tar.gz
+
+PCCC	= gcc
+MKDIR	= mkdir -p
+RMDIR	= rmdir
+MV	= mv
+CP	= cp
+RM	= rm -f
+ZIP	= zip
+
+DEFINES	= -D_GNU_SOURCE=1
+MYCFLAGS = -O3 -Wall -Werror -fomit-frame-pointer
+MYPROFILECFLAGS = -Wall -Werror 
+
+LOCALBASE = /usr
+GPERF = gperf
+LIBS=
+LIBDIR =
+LDFLAGS =
+
+SRCS = $(notdir $(basename $(wildcard src/*.c)))
+OBJS = $(SRCS:%=bin/%.o)
+
+TARGET = wiiero
+WIIERO = bin/wiiero
+EXES = $(WIIERO)
+
+
+#-------------------- PC 
+#PCLIBS  += -lSDL_mixer -lm -lSDL -lSDLmain -lSDL_image -lz
+PCLIBS  += -lm -lSDL -lSDLmain -lSDL_image
+
+
+#-------------------- WII
+WIILIBS += -lSDL_mixer -lm -lSDL -lSDLmain -lSDL_image -lz
+
+
+
+#-------------------- PSP 1.50
+PSP_FW_VERSION=150
+EXTRA_TARGETS = EBOOT.PBP kxploit
+PSP_EBOOT_TITLE = Wiiero Alpha 0.1 (psp)
+PSP_DIR_NAME = WIIERO
+PSPSDK=$(shell psp-config --pspsdk-path)
+PSPBIN = $(PSPSDK)/../bin
+CFLAGS = $(MYCFLAGS) -DPSP_MODE -G4 $(shell $(PSPBIN)/sdl-config --cflags) -DNOUNCRYPT
+LIBS= -lSDL_mixer -lvorbisfile -lvorbis -logg $(shell $(PSPBIN)/sdl-config --libs)
+include $(PSPSDK)/lib/build.mak
+
+#-------------------- PSP 3.x
+#PSP_FW_VERSION=340
+#EXTRA_TARGETS = EBOOT.PBP
+#PSP_EBOOT_TITLE = Wiiero-psp3x
+#PSP_DIR_NAME = WIIERO
+#PSPSDK=$(shell psp-config --pspsdk-path)
+#PSPBIN = $(PSPSDK)/../bin
+#CFLAGS += -DPSP_MODE -DPSPFW30X -G4 $(shell $(PSPBIN)/sdl-config --cflags) -DNOUNCRYPT
+#LIBS= -lSDL_mixer -lvorbisfile -lvorbis -logg $(shell $(PSPBIN)/sdl-config --libs)
+#include $(PSPSDK)/lib/build.mak
+
+
+
+
+VPATH = src:bin
+
+pc: CFLAGS =  $(MYCFLAGS) -I$(LOCALBASE)/include -g  -DPC_MODE
+pc: LDFLAGS = -L$(LOCALBASE)/lib $(PCLIBS)
+pc: CC = $(PCCC)
+pc: compil
+
+
+wii: CFLAGS = $(MYCFLAGS) -I$(LOCALBASE)/include -g  -DWII_MODE
+wii: LDFLAGS = -L$(LOCALBASE)/lib $(PCLIBS)
+wii: CC = $(PCCC)
+wii: compil
+
+devcompil: CFLAGS += -DDEBUG_ON -g
+devcompil: profile 
+
+profile: CFLAGS  = $(MYPROFILECFLAGS) -I$(LOCALBASE)/include -g -pg -g -DPC_MODE
+profile: LDFLAGS =  -L$(LOCALBASE)/lib $(PCLIBS) -pg
+profile: CC = $(PCCC)
+profile: compil
+
+compil: createbin $(EXES)
+
+all: default 
+
+$(WIIERO): $(OBJS)
+		$(CC) $(CFLAGS) $(LDFLAGS) $(DEFINES) -o $@ $^
+
+bin/%.o: 	src/%.c
+		$(CC) $(CFLAGS) $(COPTS) -o $@ -c $<
+
+createbin:
+		mkdir -p ./bin
+
+depend:		clean
+		cd src && makedepend -f- -Y -p bin/ *.c *.h \
+		> ../makefile.d 2> /dev/null
+
+backup:         clean
+		rm ./src/*~
+		cd .. && tar cvzf $(ARCHIVE) $(MODULE)
+
+pcclean:
+		$(RM) $(OBJS)
+		$(RM) $(EXES)
+		$(RM) -r ./bin
+
+
+.PHONY:		all default devcompil compil depend backup clean createbin
+
+include makefile.d

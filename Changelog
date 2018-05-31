@@ -1,0 +1,89 @@
+2009-10-30 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+ * Wiiero version: Release 1.3
+ * Deadlock on final screen fixed
+ * Improved GC and Classic contollers usage
+ * Coredump if GC controller pluged before wiiero start fixed
+
+
+2009-10-23 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * Wiiero version: Release 1.2
+  * Weapon names corrections
+  * Rope tension control added :
+    Hold "Change weapon" button down, you can now adjust the length
+    of the rope by "Aim up" and "Aim down" keys.
+  * "Restart game" option added
+  * Classic & GC controls support added
+  * Explosive weapon explode on player contact
+  * Rendering engine optimisation (+15%)
+  * New option menu page.
+  * Sound added (Music & ingame sounds)
+  * Language manager added :
+    - Wiiero translation files are stored into the "lang" directory
+    - You'll find a translation template into the "lang" directory, feel free
+      to send me your translation files.
+    - French, Italian, Hogorian and Spanish translation files added
+  
+
+2008-10-18 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * Wiiero version: Release 1.1
+  * Wii Resolution config implemented (Warning : Can slow down the game in case of large explosions)
+  * Nunchuck unplugging fixed
+  * Wiimote detection improved (ingame switch on support)
+  * Some English & typo correction (thanks to Flark)
+  * Missile weapon command implemented
+  * Some others little fixes
+  * Some weapons characteristics changed
+  * Weapons name reviewed
+  * 1 new weapon : Controled nuke larpa !
+  * Scrolling effect at the resurrection of a player 
+
+
+2008-10-10 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * Wiiero version: Release 1.0
+  * First Wii release
+  * "How To Play" & "About" menu added
+  * Resolution support (PC)
+  * Some little fixes
+
+
+2008-09-18 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * Wiiero version: Beta 3
+  * Configuration options added
+  * Load & save config implementation done
+  * Performance profiling
+
+
+2008-08-12 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * Wiiero version: Beta 2
+  * First Wii Port
+  * Some bug fixes
+  * PC & PSP sound layer
+  * Game modes implementation done
+
+
+2008-07-08 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * Wiiero version: Beta 1
+  * First PSP Port
+  * Performance profiling
+  * extra weapons implementation done
+  * Some bug fixes
+
+
+2008-06-20 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * Wiiero version: Alpha 1
+  * Weapons implementation done
+
+
+2008-05-20 BScrk (Luca Benevolo) <wiiero@free.fr>
+
+  * beginning of the project
+
+

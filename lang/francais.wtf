@@ -1,0 +1,179 @@
+#  __      _ .__  .__
+# /  \    / \(__) (__)  ____ ______  ____
+# \   \/\/  /|  | |  |_/ __ \\_  _ \/  _ \ 
+#  \       //   |/   |\  ___/ |  |\(  <_> )
+#   \__/\_/ \__ \\__ \ \___  >|__|  \____/ 
+#              \/   \/     \/ By BScrk
+# Wiiero language files format :
+#   The '#' character is used in order to comment the line.
+#   <whitespace> or <tab> characters are removed at the beginning of all the
+#   wiiero labels.
+#   Supported charset:  abcdefghijklmnopqrstuvwxyz.:+!0123456789[]
+#
+# To traduce Wiiero you have to replace english labels in the template file 
+# (Template.txt) by your translated labels and rename your new file <lang>.wtf
+# "wtf" stands for "Wiiero Translation File" and not for "What The Fuck" ;-)
+# Nota Bene : The wiiero lang manager isn't very evolved, so don't change
+# labels order, thanks.
+# 
+# Feel free to send me (wiiero@free.fr) your translated file and i'll intergate
+# it in the next wiiero release !
+# Good translation, and thank's !
+#
+# Translation author: BScrk
+#
+### Game labels ###
+  Chargement
+  Connectez le second controleur
+  Partie deja en cours. Utilisez [Continuer]
+  Pas de parties. Utilisez [Jouer a wiiero]
+  Redemarer pour appliquer la resolution.
+  Pressez une touche...
+  Pause
+  Suicide...
+  Tu t fais defoncer !
+### Main Menu ###
+  Jouer a Wiiero
+  Menu options
+  Relancer parie
+  Charger conf
+  Sauver conf
+  Comment jouer
+  A propos de wiiero
+  Continuer jeu
+  Quitter
+### Options ###
+  Match a mort
+  Game of tag
+  Capt. drapeau
+  On
+  Off
+  Terre
+  Sable
+  Nuit
+### Option Menu Labels ###
+  Mode:
+  Vies:
+  Drapeaux:
+  Temps:
+  Tps recharge:
+  Max bonus:
+  Noms bonus:
+  Resolution:
+  Regen carte:
+  Nb rochers:
+  Ambience:
+  Effet ombre:
+  Nom joueur 1:
+  Nom joueur 2:
+  Armes supp.:
+  Retour ...
+## Weapon selection part ###
+  Selection armes:
+  [Annuler] : aleatoire
+  [ok]      : valider
+### Players name menu ###
+  Nom du joueur: 
+### Round score ###
+  Score
+  Adv abatus
+  morts
+  Suicides
+  Ratio
+  Vies
+  Temps
+  Drapeaux
+  gagne la partie
+  egualite !
+### Config Info ###
+  Config chargee ...
+  Chargement echoue !
+  Config sauvegardee.
+  Sauvegarde echouee !
+### Exit labels ###
+  Merci d'avoir joue a Wiiero !
+  Au revoir...
+### Weapon Names ###
+  Pistolet
+  Uzi
+  Mitraillette
+  Pompe
+  Super pompe 
+  Minigun
+  Cannon
+  Bazooka
+  Doomsday
+  Winchester
+  Larpa
+  Larpa rebond.
+  Zimm
+  Sniper .50
+  Blaster
+  Gauss gun
+  Lance flammes
+  Mini rocket
+  Missile
+  Gomme cogne
+  Hellraider
+  Lazer
+  Grasshopper
+  Bonus pieges
+  Mine
+  Mine rebond.
+  Mine flotante
+  Boules fleau
+  Crackler
+  Grenade
+  Grenade fragment.
+  Mini bombe
+  Big bombe
+  Bombe banane
+  Explosifs
+  Napalm
+  Boule terre
+  Sainte grenade
+  Super cannon
+  Mine plafond
+  Grenade ghopper
+  Super lance flam.
+  Grenade incendie
+  Bombe lacrimo
+  Cannon plasma
+  Larpbombe
+  Larpbombe guidee
+  Lance banane
+  vermifuge
+  Mine sauteuse
+  Piege
+  Kamikaze
+  Fleau retardement
+  Caisse insectes
+  Bombe vermifuge
+  kit de soin
+  Ver de fer
+  Flipper
+### How To Play ###
+  Controles
+  Tirer
+  Sauter
+  Creuser
+  Montrer arme
+  Arme suiv.
+  Arme prec.
+  Corde ninja
+  Haut
+  Base
+  Gauche
+  Droite
+  Pause
+  Menu
+  ok
+  Annuler
+### Wiiero v1.2 new labels ###
+  Eclats de terre:
+  Langue:
+  Page suivante
+  Page precedente
+##############################
+## Wiiero lang file end ;-) ##
+##############################

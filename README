@@ -1,0 +1,165 @@
+    __      _ .__  .__                           
+   /  \    / \(__) (__)  ____ ______   ____              _____
+   \   \/\/  /|  | |  |_/ __ \\_  _ \ /  _ \            / -   \
+    \       //   |/   |\  ___/ |  |\/(  <_> )   ,_______\_    /
+     \__/\_/ \__ \\__ \ \___  >|__|   \____/    '--===--[_)~  \__/\
+                \/   \/     \/  by BScrk                   \______/
+
+Release 3                                                http://wiiero.free.fr
+
+_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-
+
+
+Wiiero is under GPL licence.
+Wiiero is Liero game clone developed for Wii platform.
+Wiiero is also avaiable on PSP and PC (linux/Windows) platform.
+Copyright (C) 2008 Luca Benevolo <wiiero@free.fr>
+
+This program is free software: you can redistribute it and/or modifyit under 
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY 
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with 
+this program. If not, see <http://www.gnu.org/licenses/>.
+
+
+_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`
+
+
+Wiiero is a clone of Liero specially developped for Wii.
+
+Liero is a fight game between two worms armed with heavy weapons of all kinds
+battling in underground caves. It was created by the Finnish programmer 
+Joosa Riekkinen in 1998. The game is often described as a real-time version of
+Worms, or a 2D version of Quake III. Its last release was version 1.33, 
+released in 1999.
+
+You play Wiiero exctly the same way as you played Liero: same game modes, same
+original weapons, coming with new ones like vermifuge, holy grenade, or even 
+plasma canon! Wiiero is a two player game, using the wiimote alone or both
+wiimote and nunchuk on the Wii and keyboard on PC.
+
+In wiiero game you can fight your opponent in 3 different game modes: 
+ Deathmatch, Capture the flag and Game of tag.
+    * The goal of the "deathmatch" mode is simply killing the enemy by hurting
+       him the most possible. Lives are mimited and the player with no more
+       lives will be the loser. You can define the number of lives for both
+       players in the "option" menu.
+    * The goal of the "game of tag" is to kill the enemy for him to become the
+       "tag". When a player is the "tag", his time counter decreases. When your
+       counter reaches 0, the game is over and you lost. However, you can kill
+       your enemy before that time and he becomes the "tag", his counter will
+       therefor begin decreasing. The time limit can be modified in the
+       "option" menu.
+    * Finally, in the "capture the flag" mode, you will need to get your
+       opponents flag somewhere on the map and take it back to your home,
+       giving you 1 point. However, to pick up your opponents flag, he must not
+       be in possession of your own flag. Otherwise you will need to kill him!
+       The first player accumulating the defined number of flags wins. 
+       You can modify the limit of flags in the "option" menu. 
+
+
+_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`
+
+
++-----------+
+| Wii Guide |
++-----------+
+
+  Installation
+  ============
+   If your are using the Homebrew Channel you can just copy the "Wiiero" directory 
+   from this downloaded archive to the apps directory of the root of your SD card. 
+   Wiiero CD iso comming soon (requires a modchip).
+
+  Controls
+  ========
+
+   [Wiimote Only] (Horizontal mode)
+      fire:         2
+      jump:         1
+      crop:         B
+      show weapon:  A
+      prev weapon:  A + 1
+      newt weapon:  A + 2
+      ninja hook:   1 + 2
+      up:           Cross Up
+      down:         Cross Down
+     left:         Cross Left
+      right:        Cross Right
+      pause:        Plus
+      menu:         Home
+      ok:           2
+      cancel:       1
+
+   [Wiimote & Nunchuck ] (Vertical mode)
+      fire:         B
+      jump:         C
+      crop:         A
+      show weapon:  Cross Down
+      prev weapon:  Cross Left
+      newt weapon:  Cross Right
+      ninja hook:   Z
+      up:           Nunchuck Up
+      down:         Nunchuck Down
+      left:         Nunchuck Left
+      right:        Nunchuck Right
+      pause:        Minus
+      menu:         Home
+      ok:           A
+      cancel:       B
+
+   [ GameCube Pad ]
+      fire:         B
+      jump:         A
+      crop:         X
+      show weapon:  Cross Down
+      prev weapon:  Cross Left
+      newt weapon:  Cross Right
+      ninja hook:   R
+      up:           Stic Up
+      down:         Stic Down
+      left:         Stic Left
+      right:        Stic Right
+      pause:        Z
+      menu:         Start
+      ok:           A
+      cancel:       B or X
+      
+   [ Classic Pad ] 
+      fire:         Y
+      jump:         B
+      crop:         A
+      show weapon:  X
+      prev weapon:  X + Left
+      newt weapon:  X + Right
+      ninja hook:   R
+      up:           Cross Up
+      down:         Cross Down
+      left:         Cross Left
+      right:        Cross Right
+      pause:        Minus
+      menu:         Home
+      ok:           B or Y
+      cancel:       A or X
+      
++----------+
+| PC Guide |
++----------+
+
+  Binary and documentation comming soon.
+
+
++-----------+
+| PSS Guide |
++-----------+
+
+  Binary and documentation comming soon.
+
+ 
+_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`-_-`
+
+                               Have Fun ! - BScrk
+ 
