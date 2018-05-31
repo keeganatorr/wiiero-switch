@@ -7,9 +7,9 @@ Sound is currently broken
 
 ## Screenshots
 
-![Screenshot1](https://github.com/KeeganatorP/wiiero-switch/blob/master/screen1.jpg)
-![Screenshot2](https://github.com/KeeganatorP/wiiero-switch/blob/master/screen2.jpg)
-![Screenshot3](https://github.com/KeeganatorP/wiiero-switch/blob/master/screen3.jpg)
+![Screenshot1](https://github.com/KeeganatorP/wiiero-switch/blob/master/screen1small.jpg)
+![Screenshot2](https://github.com/KeeganatorP/wiiero-switch/blob/master/screen2small.jpg)
+![Screenshot3](https://github.com/KeeganatorP/wiiero-switch/blob/master/screen3small.jpg)
 
 ## Compiling
 
